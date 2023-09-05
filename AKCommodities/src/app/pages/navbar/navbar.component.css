@@ -1,0 +1,32 @@
+.navbar {
+    background-color: #333; /* Background color of the navbar */
+    overflow: hidden;
+}
+
+/* Style for the company name on the left side */
+.navbar .company-name {
+    float: left;
+    padding: 16px 20px; /* Adjust padding as needed */
+    color: white;
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+/* Style for the navigation links on the right side */
+.navbar .navbar-links {
+    float: right;
+    margin-top: 18px;
+}
+
+/* Style for individual navigation links */
+.navbar .navbar-links a {
+    color: white;
+    text-align: center;
+    padding: 16px 20px; /* Adjust padding as needed */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Change link color on hover */
+.navbar .navbar-links a:hover {
+    background-color: #555; /* Background color on hover */
+}

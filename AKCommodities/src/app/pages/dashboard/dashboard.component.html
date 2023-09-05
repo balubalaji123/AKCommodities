@@ -1,0 +1,26 @@
+<!-- src/app/my-component.component.html -->
+<!-- src/app/my-component.component.html -->
+<div class="custom-file-input">
+    <label for="fileInput">Upload Students Data</label>
+    <input type="file" id="fileInput" (change)="processFile($event)" accept=".json" />
+  </div>
+  
+<h1>Students Data</h1>
+<table>
+    <thead>
+        <tr >
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of studentsService.studentsData index as ind">
+            <td>{{ student.studentId }}</td>
+            <td style="cursor: pointer;" (click)="onStudentSelected(ind)" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">{{ student.name }}</td>
+            <td>{{ student.age }}</td>
+            <td>{{ student.percentage }}</td>
+          </tr>
+    </tbody>
+</table>

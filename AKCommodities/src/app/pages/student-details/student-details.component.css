@@ -1,0 +1,31 @@
+.student-info {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+/* Style the student details list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+/* CSS for the Back button */
+.button-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button-back:hover {
+    background-color: #0056b3;
+  }
+  
